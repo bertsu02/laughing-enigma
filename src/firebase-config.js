@@ -1,4 +1,3 @@
-// Import the necessary Firebase modules
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
@@ -12,10 +11,7 @@ const firebaseConfig = {
   measurementId: "G-GZ4SKEF61S"
 };
 
-// Initialize Firebase with modular syntax
 const app = initializeApp(firebaseConfig);
-
-// Get a reference to the Firestore service
 const db = getFirestore(app);
 
 export { db };
